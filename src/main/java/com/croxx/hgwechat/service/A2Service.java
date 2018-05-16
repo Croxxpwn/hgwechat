@@ -37,12 +37,12 @@ public class A2Service extends HGService {
 
     @Override
     public Date START_TIME() {
-        return new GregorianCalendar(2018, 5, 20, 0, 0, 0).getTime();
+        return new GregorianCalendar(2018, 4, 20, 0, 0, 0).getTime();
     }
-
+    // 这个弱智GregorianCalendar月份是0-11
     @Override
     public Date END_TIME() {
-        return new GregorianCalendar(2018, 6, 1, 0, 0, 0).getTime();
+        return new GregorianCalendar(2018, 5, 1, 0, 0, 0).getTime();
     }
 
     @Override
