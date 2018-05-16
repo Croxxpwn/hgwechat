@@ -1,6 +1,8 @@
 package com.croxx.hgwechat.service;
 
 import com.croxx.hgwechat.config.NormalReplyFactory;
+import com.croxx.hgwechat.model.RequestLog;
+import com.croxx.hgwechat.model.RequestLogRepository;
 import com.croxx.hgwechat.model.User;
 import com.croxx.hgwechat.model.UserRepository;
 import com.croxx.hgwechat.req.ReqWeChatXML;
@@ -53,6 +55,8 @@ public class WeChatService {
 
     @Autowired
     private UserRepository userRepository;
+    @Autowired
+    private RequestLogRepository requestLogRepository;
     @Autowired
     private A2Service a2Service;
     @Autowired
@@ -174,7 +178,8 @@ public class WeChatService {
 
     private ResWeChatMsg otherMsgHandler(ReqWeChatXML xml) {
         return new ResWeChatTextMsg(
-                xml.getFromUserName(), xml.getToUserName(), getCreateTime(), TYPE_TEXT, normalReplyFactory.createRandomReply()
+                xml.getFromUserName(), xml.getToUserName(), getCreateTime(), TYPE_TEXT,
+                "回复【活动】可以查看现在正在进行的活动哦" + normalReplyFactory.createRandomReply()
         );
     }
 
@@ -192,14 +197,18 @@ public class WeChatService {
 
     private void noteServiceLog(ReqWeChatXML xml, String serviceStatus, Object res) {
         ObjectMapper mapper = new ObjectMapper();
+        String request = null;
+        String response = null;
         try {
-            logger.info("WeChatRequest:{} ServiceStatus:{}",
-                    mapper.writeValueAsString(xml),
-                    serviceStatus,
-                    mapper.writeValueAsString(res));
+            request = mapper.writeValueAsString(xml);
+            response = mapper.writeValueAsString(res);
+            logger.info("WeChatRequest:{} ServiceStatus:{} Response:{}", request, serviceStatus, response);
+            RequestLog log = new RequestLog(xml.getFromUserName(), serviceStatus, request, response, new Date());
+            requestLogRepository.save(log);
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
+
     }
 
     private String createActMsg(boolean all) {
