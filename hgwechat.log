@@ -1,0 +1,197 @@
+2018-05-16 12:33:45.198  INFO 10220 --- [main] com.croxx.hgwechat.HgwechatApplication   : Starting HgwechatApplication on DESKTOP-OUOD9L2 with PID 10220 (G:\CroxxWorks\Web\hgwechat\target\classes started by Croxx in G:\CroxxWorks\Web\hgwechat)
+2018-05-16 12:33:45.204  INFO 10220 --- [main] com.croxx.hgwechat.HgwechatApplication   : No active profile set, falling back to default profiles: default
+2018-05-16 12:33:45.352  INFO 10220 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@544820b7: startup date [Wed May 16 12:33:45 CST 2018]; root of context hierarchy
+2018-05-16 12:33:46.993  INFO 10220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d3dcb705] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-16 12:33:47.466  INFO 10220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-05-16 12:33:47.510  INFO 10220 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-16 12:33:47.510  INFO 10220 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-16 12:33:47.515  INFO 10220 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-9.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Program Files\Python36\Scripts\;D:\Program Files\Python36\;C:\Python27\;C:\Python27\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;F:\Android\sdk\platform-tools;F:\Android\sdk\tools;C:\Program Files (x86)\Pandoc\;C:\Program Files (x86)\GtkSharp\2.12\bin;D:\Program Files\Java\jre1.8.0_131\bin;D:\Program Files\CMake\bin;D:\Program Files\OpenSSH\bin;D:\Program Files\Java\jdk1.8.0_131\bin;D:\texlive\2017\bin;D:\Program Files\nodejs\;D:\MinGW\bin;D:\Program Files (x86)\GnuWin32\bin;D:\Program Files (x86)\mingw-w64\i686-7.3.0-posix-dwarf-rt_v5-rev0;D:\Program Files\PuTTY\;D:\Program Files\JetBrains\IntelliJ IDEA 2018.1.1\plugins\maven\lib\maven3\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Users\Croxx\AppData\Local\Microsoft\WindowsApps;D:\texlive\2017\bin\win32;C:\Users\Croxx\AppData\Roaming\npm;F:\GNUstep\GNUstep\System\Tools;F:\GNUstep\mingw\bin;.]
+2018-05-16 12:33:47.613  INFO 10220 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-16 12:33:47.613  INFO 10220 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2261 ms
+2018-05-16 12:33:47.763  INFO 10220 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-16 12:33:47.767  INFO 10220 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-16 12:33:47.768  INFO 10220 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-16 12:33:47.768  INFO 10220 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-16 12:33:47.768  INFO 10220 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-16 12:33:48.008  INFO 10220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-16 12:33:48.296  INFO 10220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-16 12:33:48.347  INFO 10220 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-16 12:33:48.381  INFO 10220 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-16 12:33:48.570  INFO 10220 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-05-16 12:33:48.571  INFO 10220 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-16 12:33:48.633  INFO 10220 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-16 12:33:48.852  INFO 10220 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: com.croxx.hgwechat.config.MySQL5InnoDBDialectUtf8mb4
+2018-05-16 12:33:50.168  INFO 10220 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-16 12:33:50.545  INFO 10220 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-05-16 12:33:50.722  INFO 10220 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-16 12:33:50.994  INFO 10220 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@544820b7: startup date [Wed May 16 12:33:45 CST 2018]; root of context hierarchy
+2018-05-16 12:33:51.019  WARN 10220 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-16 12:33:51.060  INFO 10220 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/debug/auth],methods=[GET]}" onto public java.lang.String com.croxx.hgwechat.controller.debug.DebugController.auth()
+2018-05-16 12:33:51.062  INFO 10220 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/debug/msg],methods=[POST],consumes=[application/xml],produces=[application/xml]}" onto public com.croxx.hgwechat.req.ReqWeChatTextMsg com.croxx.hgwechat.controller.debug.DebugController.reply(com.croxx.hgwechat.req.ReqWeChatTextMsg)
+2018-05-16 12:33:51.064  INFO 10220 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/wechat],methods=[POST],consumes=[text/xml],produces=[text/xml]}" onto public java.lang.Object com.croxx.hgwechat.controller.v1.WeChatServiceControllerV1.wechatServiceAPI(com.croxx.hgwechat.req.ReqWeChatXML)
+2018-05-16 12:33:51.065  INFO 10220 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/wechat],methods=[GET]}" onto public java.lang.String com.croxx.hgwechat.controller.v1.WeChatServiceControllerV1.authToken(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-16 12:33:51.067  INFO 10220 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-16 12:33:51.067  INFO 10220 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-16 12:33:51.087  INFO 10220 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-16 12:33:51.087  INFO 10220 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-16 12:33:51.349  INFO 10220 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-16 12:33:51.351  INFO 10220 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-16 12:33:51.355  INFO 10220 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-05-16 12:33:51.403  INFO 10220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-05-16 12:33:51.406  INFO 10220 --- [main] com.croxx.hgwechat.HgwechatApplication   : Started HgwechatApplication in 6.882 seconds (JVM running for 8.969)
+2018-05-16 12:45:44.507  INFO 18804 --- [main] com.croxx.hgwechat.HgwechatApplication   : Starting HgwechatApplication on DESKTOP-OUOD9L2 with PID 18804 (G:\CroxxWorks\Web\hgwechat\target\classes started by Croxx in G:\CroxxWorks\Web\hgwechat)
+2018-05-16 12:45:44.509  INFO 18804 --- [main] com.croxx.hgwechat.HgwechatApplication   : No active profile set, falling back to default profiles: default
+2018-05-16 12:45:44.554  INFO 18804 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2e61d218: startup date [Wed May 16 12:45:44 CST 2018]; root of context hierarchy
+2018-05-16 12:45:45.547  INFO 18804 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d15c7942] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-16 12:45:45.807  INFO 18804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-05-16 12:45:45.825  INFO 18804 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-16 12:45:45.825  INFO 18804 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-16 12:45:45.830  INFO 18804 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-9.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Program Files\Python36\Scripts\;D:\Program Files\Python36\;C:\Python27\;C:\Python27\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;F:\Android\sdk\platform-tools;F:\Android\sdk\tools;C:\Program Files (x86)\Pandoc\;C:\Program Files (x86)\GtkSharp\2.12\bin;D:\Program Files\Java\jre1.8.0_131\bin;D:\Program Files\CMake\bin;D:\Program Files\OpenSSH\bin;D:\Program Files\Java\jdk1.8.0_131\bin;D:\texlive\2017\bin;D:\Program Files\nodejs\;D:\MinGW\bin;D:\Program Files (x86)\GnuWin32\bin;D:\Program Files (x86)\mingw-w64\i686-7.3.0-posix-dwarf-rt_v5-rev0;D:\Program Files\PuTTY\;D:\Program Files\JetBrains\IntelliJ IDEA 2018.1.1\plugins\maven\lib\maven3\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Users\Croxx\AppData\Local\Microsoft\WindowsApps;D:\texlive\2017\bin\win32;C:\Users\Croxx\AppData\Roaming\npm;F:\GNUstep\GNUstep\System\Tools;F:\GNUstep\mingw\bin;.]
+2018-05-16 12:45:45.924  INFO 18804 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-16 12:45:45.924  INFO 18804 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1370 ms
+2018-05-16 12:45:46.038  INFO 18804 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-16 12:45:46.042  INFO 18804 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-16 12:45:46.042  INFO 18804 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-16 12:45:46.042  INFO 18804 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-16 12:45:46.042  INFO 18804 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-16 12:45:46.139  INFO 18804 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-16 12:45:46.388  INFO 18804 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-16 12:45:46.416  INFO 18804 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-16 12:45:46.426  INFO 18804 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-16 12:45:46.467  INFO 18804 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-05-16 12:45:46.468  INFO 18804 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-16 12:45:46.492  INFO 18804 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-16 12:45:46.562  INFO 18804 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: com.croxx.hgwechat.config.MySQL5InnoDBDialectUtf8mb4
+2018-05-16 12:45:46.950  INFO 18804 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-16 12:45:47.209  INFO 18804 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-05-16 12:45:47.315  INFO 18804 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-16 12:45:47.494  INFO 18804 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2e61d218: startup date [Wed May 16 12:45:44 CST 2018]; root of context hierarchy
+2018-05-16 12:45:47.515  WARN 18804 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-16 12:45:47.542  INFO 18804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/debug/auth],methods=[GET]}" onto public java.lang.String com.croxx.hgwechat.controller.debug.DebugController.auth()
+2018-05-16 12:45:47.544  INFO 18804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/debug/msg],methods=[POST],consumes=[application/xml],produces=[application/xml]}" onto public com.croxx.hgwechat.req.ReqWeChatTextMsg com.croxx.hgwechat.controller.debug.DebugController.reply(com.croxx.hgwechat.req.ReqWeChatTextMsg)
+2018-05-16 12:45:47.546  INFO 18804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/wechat],methods=[GET]}" onto public java.lang.String com.croxx.hgwechat.controller.v1.WeChatServiceControllerV1.authToken(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-16 12:45:47.547  INFO 18804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/wechat],methods=[POST],consumes=[text/xml],produces=[text/xml]}" onto public java.lang.Object com.croxx.hgwechat.controller.v1.WeChatServiceControllerV1.wechatServiceAPI(com.croxx.hgwechat.req.ReqWeChatXML)
+2018-05-16 12:45:47.550  INFO 18804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-16 12:45:47.551  INFO 18804 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-16 12:45:47.571  INFO 18804 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-16 12:45:47.571  INFO 18804 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-16 12:45:47.737  INFO 18804 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-16 12:45:47.738  INFO 18804 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-16 12:45:47.743  INFO 18804 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-05-16 12:45:47.774  INFO 18804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-05-16 12:45:47.776  INFO 18804 --- [main] com.croxx.hgwechat.HgwechatApplication   : Started HgwechatApplication in 3.679 seconds (JVM running for 4.783)
+2018-05-16 12:46:39.211  INFO 18804 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-16 12:46:39.211  INFO 18804 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-16 12:46:39.247  INFO 18804 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
+2018-05-16 12:46:39.655 ERROR 18804 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at com.croxx.hgwechat.service.WeChatService.caseService(WeChatService.java:238) ~[classes/:na]
+	at com.croxx.hgwechat.service.WeChatService.handleText(WeChatService.java:99) ~[classes/:na]
+	at com.croxx.hgwechat.controller.v1.WeChatServiceControllerV1.wechatServiceAPI(WeChatServiceControllerV1.java:40) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167) [na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641) [na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.base/java.lang.Thread.run(Thread.java:844) [na:na]
+
+2018-05-16 12:50:06.085  INFO 13320 --- [main] com.croxx.hgwechat.HgwechatApplication   : Starting HgwechatApplication on DESKTOP-OUOD9L2 with PID 13320 (G:\CroxxWorks\Web\hgwechat\target\classes started by Croxx in G:\CroxxWorks\Web\hgwechat)
+2018-05-16 12:50:06.088  INFO 13320 --- [main] com.croxx.hgwechat.HgwechatApplication   : No active profile set, falling back to default profiles: default
+2018-05-16 12:50:06.131  INFO 13320 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6b98a075: startup date [Wed May 16 12:50:06 CST 2018]; root of context hierarchy
+2018-05-16 12:50:07.126  INFO 13320 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7bee9a4a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-16 12:50:07.379  INFO 13320 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-05-16 12:50:07.398  INFO 13320 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-16 12:50:07.398  INFO 13320 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-16 12:50:07.402  INFO 13320 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-9.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Program Files\Python36\Scripts\;D:\Program Files\Python36\;C:\Python27\;C:\Python27\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;F:\Android\sdk\platform-tools;F:\Android\sdk\tools;C:\Program Files (x86)\Pandoc\;C:\Program Files (x86)\GtkSharp\2.12\bin;D:\Program Files\Java\jre1.8.0_131\bin;D:\Program Files\CMake\bin;D:\Program Files\OpenSSH\bin;D:\Program Files\Java\jdk1.8.0_131\bin;D:\texlive\2017\bin;D:\Program Files\nodejs\;D:\MinGW\bin;D:\Program Files (x86)\GnuWin32\bin;D:\Program Files (x86)\mingw-w64\i686-7.3.0-posix-dwarf-rt_v5-rev0;D:\Program Files\PuTTY\;D:\Program Files\JetBrains\IntelliJ IDEA 2018.1.1\plugins\maven\lib\maven3\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Users\Croxx\AppData\Local\Microsoft\WindowsApps;D:\texlive\2017\bin\win32;C:\Users\Croxx\AppData\Roaming\npm;F:\GNUstep\GNUstep\System\Tools;F:\GNUstep\mingw\bin;.]
+2018-05-16 12:50:07.495  INFO 13320 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-16 12:50:07.495  INFO 13320 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1365 ms
+2018-05-16 12:50:07.612  INFO 13320 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-16 12:50:07.616  INFO 13320 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-16 12:50:07.617  INFO 13320 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-16 12:50:07.617  INFO 13320 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-16 12:50:07.617  INFO 13320 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-16 12:50:07.711  INFO 13320 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-16 12:50:07.945  INFO 13320 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-16 12:50:07.974  INFO 13320 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-16 12:50:07.984  INFO 13320 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-16 12:50:08.027  INFO 13320 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-05-16 12:50:08.028  INFO 13320 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-16 12:50:08.053  INFO 13320 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-16 12:50:08.126  INFO 13320 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: com.croxx.hgwechat.config.MySQL5InnoDBDialectUtf8mb4
+2018-05-16 12:50:08.589  INFO 13320 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-16 12:50:08.846  INFO 13320 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-05-16 12:50:08.949  INFO 13320 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-16 12:50:09.160  INFO 13320 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6b98a075: startup date [Wed May 16 12:50:06 CST 2018]; root of context hierarchy
+2018-05-16 12:50:09.186  WARN 13320 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-16 12:50:09.211  INFO 13320 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/debug/auth],methods=[GET]}" onto public java.lang.String com.croxx.hgwechat.controller.debug.DebugController.auth()
+2018-05-16 12:50:09.213  INFO 13320 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/debug/msg],methods=[POST],consumes=[application/xml],produces=[application/xml]}" onto public com.croxx.hgwechat.req.ReqWeChatTextMsg com.croxx.hgwechat.controller.debug.DebugController.reply(com.croxx.hgwechat.req.ReqWeChatTextMsg)
+2018-05-16 12:50:09.216  INFO 13320 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/wechat],methods=[GET]}" onto public java.lang.String com.croxx.hgwechat.controller.v1.WeChatServiceControllerV1.authToken(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-16 12:50:09.216  INFO 13320 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/wechat],methods=[POST],consumes=[text/xml],produces=[text/xml]}" onto public java.lang.Object com.croxx.hgwechat.controller.v1.WeChatServiceControllerV1.wechatServiceAPI(com.croxx.hgwechat.req.ReqWeChatXML)
+2018-05-16 12:50:09.219  INFO 13320 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-16 12:50:09.220  INFO 13320 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-16 12:50:09.240  INFO 13320 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-16 12:50:09.240  INFO 13320 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-16 12:50:09.417  INFO 13320 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-16 12:50:09.419  INFO 13320 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-16 12:50:09.422  INFO 13320 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-05-16 12:50:09.449  INFO 13320 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-05-16 12:50:09.453  INFO 13320 --- [main] com.croxx.hgwechat.HgwechatApplication   : Started HgwechatApplication in 3.787 seconds (JVM running for 4.935)
+2018-05-16 12:50:15.481  INFO 13320 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-16 12:50:15.481  INFO 13320 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-16 12:50:15.500  INFO 13320 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-05-16 12:50:15.753  INFO 13320 --- [http-nio-8080-exec-1] c.croxx.hgwechat.service.WeChatService   : WeChatRequest:{"toUserName":"gh_4ebfe9e2cd7d","fromUserName":"o21Yr02nelXtiRsPeWHtkDnCsV3w","createTime":1526045109,"msgType":"text","content":"嘿嘿","msgId":6554313835817233356,"event":null,"createDate":1526045109000} ServiceStatus:SERVICE_STATUS_EXPIRE
