@@ -1,9 +1,9 @@
 package com.croxx.hgwechat.service;
 
-import com.croxx.hgwechat.model.A2;
-import com.croxx.hgwechat.model.A2Repository;
-import com.croxx.hgwechat.model.User;
-import com.croxx.hgwechat.model.UserRepository;
+import com.croxx.hgwechat.model.a2.A2;
+import com.croxx.hgwechat.model.a2.A2Repository;
+import com.croxx.hgwechat.model.user.User;
+import com.croxx.hgwechat.model.user.UserRepository;
 import com.croxx.hgwechat.req.ReqWeChatXML;
 import com.croxx.hgwechat.res.ResWeChatMsg;
 import com.croxx.hgwechat.res.ResWeChatTextMsg;
@@ -37,8 +37,9 @@ public class A2Service extends HGService {
 
     @Override
     public Date START_TIME() {
-        return new GregorianCalendar(2018, 4, 20, 0, 0, 0).getTime();
+        return new GregorianCalendar(2018, 4, 17, 0, 0, 0).getTime();
     }
+
     // 这个弱智GregorianCalendar月份是0-11
     @Override
     public Date END_TIME() {
@@ -127,7 +128,13 @@ public class A2Service extends HGService {
             // 已表白
             List<A2> results = a2Repository.findByFromidOrFromnameAndStatus(a2.getToid(), a2.getToname(), A2.STATUS_OK);
             A2 a2FromLover = null;
-            if (!results.isEmpty()) a2FromLover = results.get(0);
+            for (A2 a : results) {
+                if ((a2.getToid().equals(a.getFromid()) && a2.getFromid().equals(a.getToid()) && !a2.getToid().equals("")&& !a.getToid().equals("")) ||
+                        (a2.getToname().equals(a.getFromname()) && a2.getFromname().equals(a.getToname()) && !a2.getToname().equals("")&& !a.getToname().equals(""))) {
+                    a2FromLover = a;
+                    break;
+                }
+            }
             if (a2FromLover != null) {
                 // 匹配
                 return new ResWeChatTextMsg(

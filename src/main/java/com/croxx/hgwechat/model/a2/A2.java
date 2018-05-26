@@ -1,4 +1,4 @@
-package com.croxx.hgwechat.model;
+package com.croxx.hgwechat.model.a2;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -16,7 +16,7 @@ public class A2 {
     private long id;
     @Column
     private String openid;
-    @Column
+    @Column(columnDefinition = "TEXT")
     private String content;
     @Column
     private String fromid;

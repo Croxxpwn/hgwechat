@@ -1,10 +1,10 @@
 package com.croxx.hgwechat.service;
 
 import com.croxx.hgwechat.config.NormalReplyFactory;
-import com.croxx.hgwechat.model.RequestLog;
-import com.croxx.hgwechat.model.RequestLogRepository;
-import com.croxx.hgwechat.model.User;
-import com.croxx.hgwechat.model.UserRepository;
+import com.croxx.hgwechat.model.log.RequestLog;
+import com.croxx.hgwechat.model.log.RequestLogRepository;
+import com.croxx.hgwechat.model.user.User;
+import com.croxx.hgwechat.model.user.UserRepository;
 import com.croxx.hgwechat.req.ReqWeChatXML;
 import com.croxx.hgwechat.res.ResWeChatMsg;
 import com.croxx.hgwechat.res.ResWeChatTextMsg;

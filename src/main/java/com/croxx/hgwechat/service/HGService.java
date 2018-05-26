@@ -1,6 +1,6 @@
 package com.croxx.hgwechat.service;
 
-import com.croxx.hgwechat.model.User;
+import com.croxx.hgwechat.model.user.User;
 import com.croxx.hgwechat.req.ReqWeChatXML;
 import com.croxx.hgwechat.res.ResWeChatMsg;
 

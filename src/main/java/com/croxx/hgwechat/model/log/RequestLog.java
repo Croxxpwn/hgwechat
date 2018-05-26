@@ -1,4 +1,4 @@
-package com.croxx.hgwechat.model;
+package com.croxx.hgwechat.model.log;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -15,9 +15,9 @@ public class RequestLog {
     private String openid;
     @Column
     private String servicestatus;
-    @Column
+    @Column(columnDefinition = "TEXT")
     private String request;
-    @Column
+    @Column(columnDefinition = "TEXT")
     private String response;
     @Column
     private Date time;

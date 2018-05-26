@@ -43,29 +43,4 @@ public class WeChatServiceControllerV1 {
         }
         return "success";
     }
-
-
-
-    /*
-    @RequestMapping(value = "/wechat", method = RequestMethod.POST, produces = {MediaType.TEXT_XML_VALUE})
-    public Object xml(HttpServletRequest request) {
-        Map<String, String> data = wechatMessageService.xmlToMap(request);
-        ObjectMapper mapper = new ObjectMapper();
-        try {
-            logger.info("WeChatRequest:{}", mapper.writeValueAsString(data));
-        } catch (JsonProcessingException e) {
-            e.printStackTrace();
-        }
-        if (data.get(WeChatMessageService.TYPE_NAME).equals(WeChatMessageService.TYPE_TEXT)) {
-            ReqWeChatTextMsg msg = new ReqWeChatTextMsg(data);
-            return new ResWeChatTextMsg(
-                    msg.getFromUserName(), msg.getToUserName(),
-                    msg.getCreateTime(), msg.getMsgType(),
-                    msg.getContent()
-            );
-        }
-
-        return "success";
-    }
-    */
 }

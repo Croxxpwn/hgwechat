@@ -1,4 +1,4 @@
-package com.croxx.hgwechat.model;
+package com.croxx.hgwechat.model.user;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
