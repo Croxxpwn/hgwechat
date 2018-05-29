@@ -1,11 +1,9 @@
 package com.croxx.hgwechat.model.didiumbrella;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
@@ -20,8 +18,10 @@ public class DidiUmbrellaOrder {
     @GeneratedValue
     private Long id;
     @Column
+    @JsonIgnore
     private String from_openid;
     @Column
+    @JsonIgnore
     private String to_openid;
     @Column
     private String from_nickname;
@@ -39,6 +39,14 @@ public class DidiUmbrellaOrder {
     private String from_position;
     @Column
     private String to_position;
+    @Column
+    private String from_contact;
+    @Column
+    private String to_contact;
+    @Column
+    private String from_wifi;
+    @Column
+    private String to_wifi;
     @Column
     private String remark;
     @Column
@@ -60,7 +68,7 @@ public class DidiUmbrellaOrder {
 
     public DidiUmbrellaOrder(String from_openid, String from_nickname,
                              double from_longitude, double from_latitude, double to_longitude, double to_latitude,
-                             String from_position, String to_position,
+                             String from_position, String to_position, String from_contact,String from_wifi,
                              String remark, Date create_time, Date event_time, String status) {
         this.from_openid = from_openid;
         this.from_nickname = from_nickname;
@@ -69,12 +77,16 @@ public class DidiUmbrellaOrder {
         this.to_longitude = to_longitude;
         this.to_latitude = to_latitude;
         this.from_position = from_position;
+        this.from_contact = from_contact;
         this.to_position = to_position;
+        this.from_wifi = from_wifi;
         this.remark = remark;
         this.create_time = create_time;
         this.event_time = event_time;
         this.status = status;
     }
+
+
 
     /*    Getteres & Setters     */
 
@@ -164,6 +176,38 @@ public class DidiUmbrellaOrder {
 
     public void setTo_position(String to_position) {
         this.to_position = to_position;
+    }
+
+    public String getFrom_contact() {
+        return from_contact;
+    }
+
+    public void setFrom_contact(String from_contact) {
+        this.from_contact = from_contact;
+    }
+
+    public String getTo_contact() {
+        return to_contact;
+    }
+
+    public void setTo_contact(String to_contact) {
+        this.to_contact = to_contact;
+    }
+
+    public String getFrom_wifi() {
+        return from_wifi;
+    }
+
+    public void setFrom_wifi(String from_wifi) {
+        this.from_wifi = from_wifi;
+    }
+
+    public String getTo_wifi() {
+        return to_wifi;
+    }
+
+    public void setTo_wifi(String to_wifi) {
+        this.to_wifi = to_wifi;
     }
 
     public String getRemark() {

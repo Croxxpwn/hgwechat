@@ -60,6 +60,8 @@ public class WeChatService {
     @Autowired
     private A2Service a2Service;
     @Autowired
+    private A3Service a3Service;
+    @Autowired
     private NormalReplyFactory normalReplyFactory;
 
     public static long getCreateTime() {
@@ -89,7 +91,7 @@ public class WeChatService {
     // TODO : 在这里注册服务
     private List<HGService> getServices() {
         return Arrays.asList(
-                a2Service
+                a2Service, a3Service
         );
     }
 

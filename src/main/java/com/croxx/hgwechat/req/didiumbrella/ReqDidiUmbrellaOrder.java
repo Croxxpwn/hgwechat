@@ -2,12 +2,11 @@ package com.croxx.hgwechat.req.didiumbrella;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-import javax.persistence.Column;
 import java.util.Date;
 
 public class ReqDidiUmbrellaOrder {
 
-    private String js_code;
+    private String token;
     private String from_nickname;
     private double from_longitude;
     private double from_latitude;
@@ -15,6 +14,8 @@ public class ReqDidiUmbrellaOrder {
     private double to_latitude;
     private String from_position;
     private String to_position;
+    private String from_contact;
+    private String from_wifi;
     private String remark;
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date event_time;
@@ -24,12 +25,12 @@ public class ReqDidiUmbrellaOrder {
 
     /*    Getters & Setters     */
 
-    public String getJs_code() {
-        return js_code;
+    public String getToken() {
+        return token;
     }
 
-    public void setJs_code(String js_code) {
-        this.js_code = js_code;
+    public void setToken(String token) {
+        this.token = token;
     }
 
     public String getFrom_nickname() {
@@ -86,6 +87,22 @@ public class ReqDidiUmbrellaOrder {
 
     public void setTo_position(String to_position) {
         this.to_position = to_position;
+    }
+
+    public String getFrom_contact() {
+        return from_contact;
+    }
+
+    public void setFrom_contact(String from_contact) {
+        this.from_contact = from_contact;
+    }
+
+    public String getFrom_wifi() {
+        return from_wifi;
+    }
+
+    public void setFrom_wifi(String from_wifi) {
+        this.from_wifi = from_wifi;
     }
 
     public String getRemark() {
